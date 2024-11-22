@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shresth Singh - Personal Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        .hero-section {
+            background-color: #2563eb;
+            color: white;
+            padding: 6rem 1.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card {
+            background: #f9fafb;
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            width: 3rem;
+            height: 3rem;
+            color: #2563eb;
+        }
+
+        .social-link {
+            color: #fff;
+            transition: color 0.2s;
+        }
+
+        .social-link:hover {
+            color: #60a5fa;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <h1 class="text-5xl font-bold mb-4">Shresth Singh</h1>
+            <p class="text-xl mb-6">Computer Science Student & Tech Enthusiast</p>
+            <div class="flex space-x-4">
+                <a href="mailto:kashishth89@gmail.com" class="flex items-center gap-2 hover:text-blue-200">
+                    <i data-feather="mail"></i> Email
+                </a>
+                <a href="tel:+919953822550" class="flex items-center gap-2 hover:text-blue-200">
+                    <i data-feather="phone"></i> Phone
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-8">About Me</h2>
+            <p class="text-lg text-gray-700 mb-6">
+                I'm a results-driven engineering student at SRM University, Haryana, passionate about game development and AI bot creation. 
+                With strong skills in Python and Java, I'm dedicated to creating innovative technical solutions.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-4">Languages</h3>
+                    <ul class="space-y-2">
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>French</li>
+                        <li>Japanese</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-semibold mb-4">Technical Skills</h3>
+                    <ul class="space-y-2">
+                        <li>Project Management</li>
+                        <li>Structural Analysis</li>
+                        <li>Robotics and Automation</li>
+                        <li>AI-Bots Management</li>
+                        <li>Creative Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="bg-white section">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-8">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <i data-feather="gamepad" class="icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Java Games Collection</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• BrickBriz - Brick breaking game</li>
+                        <li>• Snakeel - Snake game</li>
+                        <li>• TicTacToe</li>
+                    </ul>
+                </div>
+                
+                <div class="project-card">
+                    <i data-feather="cpu" class="icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Kagi Discord Bot</h3>
+                    <p class="text-gray-600">
+                        AI-powered Discord bot with conversation capabilities, reminders, and music playback features.
+                        Built using Python libraries.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <i data-feather="edit-3" class="icon mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Freelance Design Work</h3>
+                    <p class="text-gray-600">
+                        Graphic design and video editing projects for colleges, brands, and coaching centers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-8">Experience</h2>
+            <div class="space-y-8">
+                <div class="card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Mentor</h3>
+                            <p class="text-gray-600">CIIE (Center For Innovation, Incubation and Entrepreneurship)</p>
+                        </div>
+                        <span class="text-gray-500">Jan 2023 - Present</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Led workshops in Arduino, Python, and UI/UX</li>
+                        <li>• Managed social media platforms</li>
+                        <li>• Mentored teams in various hackathons</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-xl font-semibold">Core Member</h3>
+                            <p class="text-gray-600">Google Development Student Club (GDSC)</p>
+                        </div>
+                        <span class="text-gray-500">July 2023 - Sept 2023</span>
+                    </div>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>• Volunteered for GDSC Cloud Jam workshop</li>
+                        <li>• Managed social media presence</li>
+                        <li>• Designed team profiles</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">© 2024 Kashish Thareja. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="mailto:kashishth89@gmail.com" class="social-link">
+                        <i data-feather="mail"></i>
+                    </a>
+                    <a href="tel:+919953822550" class="social-link">
+                        <i data-feather="phone"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-feather="github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i data-feather="linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Feather Icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+        });
+
+        // Add smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to project cards on hover
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
